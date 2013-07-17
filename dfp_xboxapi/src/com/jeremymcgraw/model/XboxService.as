@@ -18,7 +18,6 @@ package com.jeremymcgraw.model
 		private var _sf:Display;
 		private var _preloader:Preloader;
 		private var _evt:XboxEvent;
-		public static const PROXY:String = "http://wddbs.com/~dfp/proxy.php?url=";
 		
 		public function XboxService(searchField:Display)
 		{
@@ -29,8 +28,8 @@ package com.jeremymcgraw.model
 		
 		public function doSearch(keyword:String):void
 		{	
-			var url:String = PROXY + "https://xboxapi.com/xml/profile/" + keyword;
-			var urlFriends:String = PROXY + "https://xboxapi.com/xml/friends/" + keyword;
+			var url:String ="https://xboxapi.com/xml/profile/" + keyword;
+			var urlFriends:String ="https://xboxapi.com/xml/friends/" + keyword;
 			
 			var urlReqest:URLRequest = new URLRequest(url);
 			
